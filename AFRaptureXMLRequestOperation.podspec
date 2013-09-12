@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '5.0'
   s.source_files     = 'AFRaptureXMLRequestOperation/*.{h,m}'
   s.requires_arc     = true
+  s.xcconfig         = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   s.dependency       'AFNetworking', '~> 1.2.1'
   s.dependency       'RaptureXML', '~> 1.0.1'
 end
